@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Monitoring Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-image"></div> <!-- Empty div for the background image -->
+    <div class="content">
+        <div class="container">
+            <h1>System Monitoring Panel</h1>
+            <div id="systemInfo" class="info-container">
+                <div id="networkUsage" class="info-box">
+                    <h2>Network Usage</h2>
+                    <p>Incoming: <span id="incomingBytes"></span> bytes</p>
+                    <p>Outgoing: <span id="outgoingBytes"></span> bytes</p>
+                </div>
+                <div id="cpuInfo" class="info-box">
+                    <h2>CPU Usage</h2>
+                    <p>Name: <span id="cpuName"></span></p>
+                    <p>Usage: <span id="cpuUsage"></span>%</p>
+                </div>
+                <div id="ramUsage" class="info-box">
+                    <h2>RAM Usage</h2>
+                    <p><span id="ramUsagePercent"></span>%</p>
+                </div>
+                <div id="diskUsage" class="info-box">
+                    <h2>Disk Usage</h2>
+                    <p><span id="diskUsagePercent"></span>%</p>
+                </div>
+                <div id="processCount" class="info-box">
+                    <h2>Running Process Count</h2>
+                    <p><span id="runningProcesses"></span></p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <p>&copy; Made with 💘 By <a href="https://psychodev.quebitml.com">PsyCho Dev</a></p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
